@@ -14,19 +14,17 @@ public class Exercise001Test {
     public void checkHello() {
         Exercise001 ex001 = new Exercise001();
         assertEquals("Hello", ex001.capitalizeWord("hello"));
-        // assertEquals("The quick fox", ex001.capitalizeWord("the quick fox"));
-        // assertEquals("Oh no, bears!!!", ex001.capitalizeWord("oh no, bears!!!"));
+        assertEquals("The quick fox", ex001.capitalizeWord("the quick fox"));
+        assertEquals("Oh no, bears!!!", ex001.capitalizeWord("oh no, bears!!!"));
     }
 
     @Test
-    @Ignore
     public void checkHelloAlreadyUppercase() {
         Exercise001 ex001 = new Exercise001();
         assertEquals("Hello", ex001.capitalizeWord("Hello"));
     }
 
     @Test
-    @Ignore
     public void checkInitials() {
         Exercise001 ex001 = new Exercise001();
         assertEquals("F.B", ex001.generateInitials("Frederic", "Bonneville"));

@@ -9,7 +9,7 @@ public class Exercise001 {
     }
 
     public String generateInitials(String firstName, String lastName) {
-        return "";
+        return String.valueOf(firstName.charAt(0)) + lastName.charAt(0);
     }
 
     public double addVat(double originalPrice, double vatRate) {
