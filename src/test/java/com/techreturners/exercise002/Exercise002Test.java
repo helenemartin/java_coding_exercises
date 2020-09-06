@@ -2,12 +2,13 @@ package com.techreturners.exercise002;
 
 import static org.junit.Assert.assertEquals;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class Exercise002Test {
 
     @Test
-    @ignore
+    @Ignore
     public void checkIsFromManchester() {
         Exercise002 ex002 = new Exercise002();
 
@@ -19,7 +20,7 @@ public class Exercise002Test {
     }
 
     @Test
-    @ignore
+    @Ignore
     public void checkCanWatchFilm() {
         Exercise002 ex002 = new Exercise002();
 
