@@ -17,10 +17,12 @@ public class Exercise001 {
     }
 
     public String reverse(String sentence) {
-        return String.println(sentence.reverse().toString());
+        return new StringBuilder(sentence).reverse().toString();
     }
 
     public int countLinuxUsers(List<User> users) {
-        return 0;
+        //doesnt receive actual value
+        Integer size = users.size();
+        return size.intValue();
     }
 }
