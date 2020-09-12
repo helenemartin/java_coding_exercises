@@ -13,7 +13,7 @@ public class Exercise001 {
     }
 
     public double addVat(double originalPrice, double vatRate) {
-        return 0.0;
+        return Double.parseDouble(String.format("%.2f", originalPrice * (1 + (vatRate /100))));
     }
 
     public String reverse(String sentence) {
@@ -22,7 +22,17 @@ public class Exercise001 {
 
     public int countLinuxUsers(List<User> users) {
         //doesnt receive actual value
-        Integer size = users.size();
-        return size.intValue();
+        final String LinuxOpName = "Linux";
+        int countLinuxUsers = 0;
+        Iterator userIterator = users.Iterator.next();
+        
+        while (userIterator.hasNext()) {
+            User user = (User) userIterator.next();
+            if (LinuxOpName.equal(user.getType())) {
+                countOfLinuxUsers++;
+            }
+        }
+
+        return countOfLinuxUsers;
     }
 }
