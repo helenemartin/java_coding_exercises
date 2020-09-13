@@ -4,7 +4,6 @@ import java.util.List;
 
 public class Exercise001 {
     public String capitalizeWord(String word) {
-        // Add your code here
         return Character.toUpperCase(word.charAt(0)) + word.substring(1);
     }
 
@@ -24,7 +23,7 @@ public class Exercise001 {
         //doesnt receive actual value
         final String LinuxOpName = "Linux";
         int countLinuxUsers = 0;
-        Iterator userIterator = users.Iterator.next();
+        Iterator userIterator = users.iterator();
         
         while (userIterator.hasNext()) {
             User user = (User) userIterator.next();
