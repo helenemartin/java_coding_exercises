@@ -8,7 +8,7 @@ import org.junit.Test;
 public class Exercise002Test {
 
     @Test
-    @Ignore
+    // @Ignore
     public void checkIsFromManchester() {
         Exercise002 ex002 = new Exercise002();
 
@@ -20,7 +20,7 @@ public class Exercise002Test {
     }
 
     @Test
-    @Ignore
+    // @Ignore
     public void checkCanWatchFilm() {
         Exercise002 ex002 = new Exercise002();
 
