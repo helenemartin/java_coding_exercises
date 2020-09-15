@@ -28,7 +28,7 @@ public class Exercise001 {
         while (userIterator.hasNext()) {
             User user = (User) userIterator.next();
             if (LinuxOpName.equal(user.getType())) {
-                countOfLinuxUsers++;
+                countLinuxUsers++;
             }
         }
 
