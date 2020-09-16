@@ -2,19 +2,12 @@ package com.techreturners.exercise002;
 
 public class Exercise002 {
 
-    public boolean isFromManchester(/* Person person */) {
-        if ( person.getCity().equals("Manchester")) {
-            isFromManchester = true;
-        }//elese if statement here?
-        return isFromManchester;
+    public boolean isFromManchester(Person person) {
+        return "Manchester".equals(person.getBirthPlace());
     }
 
-    public boolean canWatchFilm(/* Person person, int ageLimit*/) {
-        boolean watchFilm = false;
-        if ( person.getAge() >= ageLimit) {
-            watchFilm = true;
-        }
-        return watchFilm;
+    public boolean canWatchFilm(Person person, int ageLimit) {
+        return person.getAge() >= ageLimit;
     }
     
 }
