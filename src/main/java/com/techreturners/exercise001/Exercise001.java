@@ -16,22 +16,22 @@ public class Exercise001 {
     }
 
     public String reverse(String sentence) {
-        return new StringBuilder(sentence).reverse().toString();
-    }
+        String revstring = "";
+        for (int i = sentence.length() - 1; i >= 0; i--) {
+            revstring = revstring + sentence.charAt(i);
+        }
+        return revstring;
+    };
 
     public int countLinuxUsers(List<User> users) {
-        // doesnt receive actual value
-        final String LinuxOpName = "Linux";
-        int countLinuxUsers = 0;
-        Iterator userIterator = users.iterator();
-
-        while (userIterator.hasNext()) {
-            User user = (User) userIterator.next();
-            if (LinuxOpName.equal(user.getType())) {
-                countLinuxUsers++;
+        User usr;
+        int count = 0;
+        for (int i = 0; i < users.size(); i++) {
+            usr = users.get(i);
+            if (usr.getType().toUpperCase().equals("LINUX")) {
+                count++;
             }
         }
-
-        return countLinuxUsers;
+        return count;
     }
 }
