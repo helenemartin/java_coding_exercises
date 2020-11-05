@@ -8,11 +8,11 @@ public class Exercise001 {
     }
 
     public String generateInitials(String firstName, String lastName) {
-        return String.valueOf(firstName.charAt(0)) + "." +lastName.charAt(0);
+        return Character.toUpperCase(firstName.charAt(0)) + "." + Character.toUpperCase(lastName.charAt(0));
     }
 
     public double addVat(double originalPrice, double vatRate) {
-        return Double.parseDouble(String.format("%.2f", originalPrice * (1 + (vatRate /100))));
+        return Double.parseDouble(String.format("%.2f", originalPrice * (1 + (vatRate / 100))));
     }
 
     public String reverse(String sentence) {
@@ -20,11 +20,11 @@ public class Exercise001 {
     }
 
     public int countLinuxUsers(List<User> users) {
-        //doesnt receive actual value
+        // doesnt receive actual value
         final String LinuxOpName = "Linux";
         int countLinuxUsers = 0;
         Iterator userIterator = users.iterator();
-        
+
         while (userIterator.hasNext()) {
             User user = (User) userIterator.next();
             if (LinuxOpName.equal(user.getType())) {
@@ -32,6 +32,6 @@ public class Exercise001 {
             }
         }
 
-        return countOfLinuxUsers;
+        return countLinuxUsers;
     }
 }
