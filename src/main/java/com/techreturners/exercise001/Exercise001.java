@@ -1,3 +1,4 @@
+
 package com.techreturners.exercise001;
 
 import java.util.List;
@@ -12,7 +13,8 @@ public class Exercise001 {
     }
 
     public double addVat(double originalPrice, double vatRate) {
-        return Double.parseDouble(String.format("%.2f", originalPrice * (1 + (vatRate / 100))));
+        double vatPrice = originalPrice + (vatRate * originalPrice / 100);
+        return (double) Math.round(vatPrice * 100) / 100;
     }
 
     public String reverse(String sentence) {
